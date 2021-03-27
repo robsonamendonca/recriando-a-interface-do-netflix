@@ -106,6 +106,6 @@ function destaque(id) {
         info.setAttribute("onclick", "exibeinfo(" + id + ");")
     }
     if (background) {
-        background.setAttribute("style", 'background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),url("../' + filmes_img[id] + '");   height: 400px;  background-size: cover;  display: flex;  flex-direction: column;  justify-content: center;  align-items: flex-start;')
+        background.setAttribute("style", "background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),url('" + filmes_img[id] + "');   height: 400px;  background-size: cover;  display: flex;  flex-direction: column;  justify-content: center;  align-items: flex-start;")
     }
 }
