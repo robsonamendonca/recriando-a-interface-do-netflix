@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+
+    <!-- responsividade-->
+    <link rel="stylesheet" href="./style/responsive.css">
+
+    <!-- Owl css-->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+
+
+    <title>DC Comics Flix</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">DCCFLIX</h2>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">DCU Batman: Morte em Família</h3>
+                <p class="descricao">
+                    Batman: Death in the Family – Treinado como um pupilo do Batman, Jason Todd traz um senso implacável
+                    de justiça como Robin e está focado em acabar com o Coringa. Mas será que Batman poderá salvar Robin
+                    de um destino pior que a morte? Tragédia, vingança e redenção aguardam você nesse revolucionário
+                    filme da DC! Quem viverá? Quem morrerá? Quem cuidará de Gotham? Também inclui 4 curtas do DC
+                    Showcase: Adam Strange, Sgt. Rock, Vingador Fantasma e Morte.
+                </p>
+                <div class="botoes">
+                    <button id="assistir" role="button" class="botao" onclick="abrirvideo(0);">
+                        <i class="fas fa-play"></i>
+                        ASSITIR AGORA
+                    </button>
+                    <button id="info" role="button" class="botao" onclick="exibeinfo(0);">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÔES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/batman_deathinfamily.jpg" alt="" srcset="" onclick="destaque(0);">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/batman_vs_superman.jpg" alt="" srcset="" onclick="destaque(3);">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/capita_marvel.jpg" alt="" srcset="" onclick="destaque(4);">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/deadpool.jpg" alt="" srcset="" onclick="destaque(5);">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/justiceleague.jpg" alt="" srcset="" onclick="destaque(6);">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mulher_maravlilha.jpg" alt="" srcset="" onclick="destaque(1);">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/Watchmen.jpg" alt="" srcset="" onclick="destaque(2);">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/f2bbc8a77e.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/main.js"></script>
+    <script src="js/funcoes.js"></script>
+
+</body>
+
+</html>
